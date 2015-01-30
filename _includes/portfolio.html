@@ -1,0 +1,7 @@
+<section id="portfolio" class="container content-section text-center">
+  <div class="owl-carousel owl-work">
+    {% for job in site.work %}
+      {{job.output}}
+    {% endfor %}
+  </div>
+</section>

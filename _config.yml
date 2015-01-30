@@ -1,0 +1,14 @@
+# Site settings
+title: Marvin Osswald
+email: mail@marvinosswald.de
+description: > # My personal portfolio and Website.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://marvinosswald.de" # the base hostname & protocol for your site
+twitter_username: Marvoss_
+github_username:  marvinosswald
+
+# Build settings
+markdown: kramdown
+
+collections:
+- work

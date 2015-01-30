@@ -1,0 +1,39 @@
+<div>
+  <div class="ui card">
+    <div class="image dimmable">
+      <div class="ui dimmer">
+        <div class="content">
+          <div class="center">
+            <div class="ui inverted button">Add Friend</div>
+          </div>
+        </div>
+      </div>
+      {% if page.cards.size > 0 %}
+        <div class="owl-cards owl-carousel">
+          {% for card in page.cards %}
+          <img src="/img/work/{{page.nick}}/{{card}}.png">
+          {% endfor %}
+        </div>
+      {% else %}
+      <img src="/img/work/{{page.nick}}/card.png">
+      {% endif %}
+    </div>
+    <div class="content">
+      <div class="header">{{page.title}}</div>
+      <div class="meta">
+        <a class="group">{{page.subtitle}}</a>
+      </div>
+      <div class="description">{{content}}</div>
+    </div>
+    <div class="extra content">
+      <div class="left floated">
+      {% for tech in page.technologies %}
+      <img class="ui image" src="/img/technologies/{{tech}}.png" alt="{{tech}}"  >
+      {% endfor %}
+      </div>
+      {% if page.more %}
+        <a href="{{page.more}}" target="_blank" class="right floated" style="line-height: 30px;">Mehr</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
