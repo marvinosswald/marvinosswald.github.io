@@ -1,10 +1,10 @@
 ---
 layout: work
-title: Santa Deliver
-nick: santadeliver
+title: Santa Delivery
+nick: santadelivery
 subtitle: iOS/Android Game
 technologies:
-- unity3D
-- chotoshop
+- unity3d
+- photoshop
 ---
 arriving next christmas
