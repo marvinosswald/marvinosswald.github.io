@@ -4,7 +4,7 @@ title: Jochen Zeltwanger
 nick: jzwebsite
 subtitle: Website
 technologies:
-- Wordpress
+- cordpress
 more: 'http://jochen-zeltwanger.de'
 ---
-Wordpress site 
+Wordpress site

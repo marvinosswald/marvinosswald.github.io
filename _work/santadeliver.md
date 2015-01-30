@@ -4,7 +4,7 @@ title: Santa Deliver
 nick: santadeliver
 subtitle: iOS/Android Game
 technologies:
-- Unity3D
-- Photoshop
+- unity3D
+- chotoshop
 ---
 arriving next christmas
