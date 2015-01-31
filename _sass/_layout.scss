@@ -1,3 +1,4 @@
+
 #me{
     width: 200px;
     height: 200px;
@@ -309,4 +310,20 @@ img::selection {
 
 img::-moz-selection {
     background: 0 0;
+}
+#kontakt {
+  width: 100%;
+  .row {
+    height: 200px;
+    background-color: rgba(255,255,255,0.1);
+    div{
+      padding-top: 50px;
+    }
+    p{
+      font-family: 'Ubuntu Mono', Arial, serif !important;
+    }
+    .counter{
+      
+    }
+  }
 }

@@ -45,5 +45,12 @@ $(document).ready(function(){
     autoplayTimeout:2000,
     autoplayHoverPause:false
   });
-
+  $('#coffee_counter').html(function(){
+    var start = Date.parse(2012,16,7), now = Date.now(), diff = now - start;
+    return Math.round(diff / 1000 /60 /60 / 24) * 2;
+  });
+  $('#code_counter').html(function(){
+    var start = Date.parse(2010,16,7), now = Date.now(), diff = now - start;
+    return Math.round(diff / 1000 /60 /60 / 24) * 15;
+  });
 });
