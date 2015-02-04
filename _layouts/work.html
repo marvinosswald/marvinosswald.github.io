@@ -1,13 +1,15 @@
 <div>
   <div class="ui card">
     <div class="image dimmable">
+      {% if page.popup %}
       <div class="ui dimmer">
         <div class="content">
           <div class="center">
-            <div class="ui inverted button">Add Friend</div>
+            <div class="ui inverted button trigger" target="{{page.nick}}_details">details</div>
           </div>
         </div>
       </div>
+      {% endif %}
       {% if page.cards.size > 0 %}
         <div class="owl-cards owl-carousel">
           {% for card in page.cards %}
@@ -32,7 +34,7 @@
       {% endfor %}
       </div>
       {% if page.more %}
-        <a href="{{page.more}}" target="_blank" class="right floated" style="line-height: 30px;">Mehr</a>
+        <a href="{{page.more}}" target="_blank" class="right floated" style="line-height: 30px;">details</a>
       {% endif %}
     </div>
   </div>
