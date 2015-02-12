@@ -181,6 +181,7 @@ a:focus {
     display: table;
     width: 100%;
     height: auto;
+    //height: 5000px !important;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -191,12 +192,12 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
-
+/* ex
 .intro-body {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
 }
-
+*/
 .heading {
     font-size: 40px;
 }
@@ -323,7 +324,7 @@ img::-moz-selection {
       font-family: 'Ubuntu Mono', Arial, serif !important;
     }
     .counter{
-      
+
     }
   }
 }
