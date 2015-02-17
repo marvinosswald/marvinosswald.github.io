@@ -6,4 +6,6 @@ body {
     background-color: #000;
     overflow-x:hidden;
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+    background: #000 url("../img/bg.jpg") no-repeat fixed center;
+    background-size: contain;
 }
