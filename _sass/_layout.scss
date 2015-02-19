@@ -191,6 +191,20 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    .scene{
+      position:absolute;
+      bottom:0;
+      left:0;
+      right:0;
+      font-family: 'Ubuntu Mono', Arial, serif !important;
+      font-size:40px;
+      .topic{
+        padding-right: 100px;
+      }
+      .answer{
+
+      }
+    }
 }
 /* ex
 .intro-body {

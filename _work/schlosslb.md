@@ -3,6 +3,8 @@ layout: work
 title: Schloss Ludwigsburg
 nick: schlosslb
 subtitle: 3D model
+gal:
+  big: '_big'
 cards:
 - first
 - second

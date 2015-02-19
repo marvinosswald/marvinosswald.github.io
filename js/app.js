@@ -54,3 +54,18 @@ $(document).ready(function(){
     return Math.round(diff / 1000 /60 /60 / 24) * 15;
   });
 });
+$('.ajax-popup').magnificPopup({
+  type: 'ajax'
+});
+$('.vimeo-popup').magnificPopup({
+  type: 'iframe'
+});
+$('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+});

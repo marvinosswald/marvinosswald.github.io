@@ -1,19 +1,10 @@
 <div>
   <div class="ui card">
     <div class="image dimmable">
-      {% if page.popup %}
-      <div class="ui dimmer">
-        <div class="content">
-          <div class="center">
-            <div class="ui inverted button trigger" target="{{page.nick}}_details">details</div>
-          </div>
-        </div>
-      </div>
-      {% endif %}
       {% if page.cards.size > 0 %}
-        <div class="owl-cards owl-carousel">
+        <div class="owl-cards owl-carousel gallery">
           {% for card in page.cards %}
-          <img src="/img/work/{{page.nick}}/{{card}}.png">
+          <a href="/img/work/{{page.nick}}/{{card}}{{page.gal.big}}.png"><img src="/img/work/{{page.nick}}/{{card}}.png"></a>
           {% endfor %}
         </div>
       {% else %}
@@ -34,7 +25,15 @@
       {% endfor %}
       </div>
       {% if page.more %}
+        {% if page.more.type%}
+          {% if page.more.type == 'gallery' %}
+          <a href="{{page.more.link}}" class="right floated gallery" style="line-height: 30px;">details</a>
+          {% else %}
+          <a href="{{page.more.link}}" class="right floated {{page.more.type}}-popup" style="line-height: 30px;">details</a>
+          {% endif %}
+        {% else %}
         <a href="{{page.more}}" target="_blank" class="right floated" style="line-height: 30px;">details</a>
+        {% endif %}
       {% endif %}
     </div>
   </div>

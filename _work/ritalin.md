@@ -5,6 +5,8 @@ nick: ritalin
 subtitle: video clip
 technologies:
 - premiere
-more: 'https://vimeo.com/47444963'
+more:
+  type: vimeo
+  link: https://vimeo.com/47444963
 ---
 video clip for ritalin - kraftklub
