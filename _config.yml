@@ -16,3 +16,11 @@ collections:
   #showcase:
     #output: true
     #permalink: /showcase/:path/
+
+#blog
+cover: '/blog/img/cover.jpg'
+pagination: 5
+
+name: 'Marvin Osswald'
+author: 'Marvin Osswald'
+author_image: "/blog/img/author.jpg"

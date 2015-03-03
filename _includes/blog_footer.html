@@ -1,0 +1,36 @@
+<footer>
+
+  <section id="kontakt" class="container content-section">
+    <div class="row" style="background-color: rgba(0,0,0,0.1);">
+        <div class="col-md-3">
+          <p>Cup of coffee: <span id="coffee_counter" class="counter"></span> and counting</p>
+        </div>
+        <div class="col-md-3">
+          <p>Lines of code: <span id="code_counter" class="counter"></span> and counting</p>
+        </div>
+        <div class="col-md-3">
+          <p>destroyed keyboards: 3</p>
+        </div>
+        <div class="col-md-3 text-right">
+            <p>Marvin Oßwald <br/> Im Rosenhain 12 71563 Affalterbach</p>
+        </div>
+        <div class=" text-center">
+            <p><a href="mailto:mail@marvinosswald.de">mail (at) marvinosswald.de</a></p>
+        </div>
+    </div>
+</section>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="{{ "/js/jquery.magnific-popup.min.js" | prepand: site.baeurl}}"></script>
+<script>
+$(document).ready(function(){
+  $('#coffee_counter').html(function(){
+    var start = Date.parse(2012,16,7), now = Date.now(), diff = now - start;
+    return Math.round(diff / 1000 /60 /60 / 24) * 2;
+  });
+  $('#code_counter').html(function(){
+    var start = Date.parse(2010,16,7), now = Date.now(), diff = now - start;
+    return Math.round(diff / 1000 /60 /60 / 24) * 15;
+  });
+});
+</script>
+</footer>
