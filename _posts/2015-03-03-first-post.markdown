@@ -2,7 +2,7 @@
 layout: post
 title:  "First post"
 date:   2015-03-03 19:53
-categories: jekyll update
+#categories:
 tags: featured
 image: /blog/article_images/2015-03-03-first-post/desktop.jpg
 ---
